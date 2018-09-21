@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Demo Vue.js</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dash.css">
+</head>
+
+<body>
+  
+  <main>
+    <div class="sidebar" id="sidebar">
+      <!-- Components for Profile and Contextual Menu -->
+        <div id="profile">
+          <profile></profile>
+        </div>
+        <div id="dashmenu">
+          <dash-menu></dash-menu>
+        </div>
+        
+    </div>
+
+    <nav class="navbar" id="navbar">
+      <!-- components for menus -->
+      <div id="mainmenu">
+        <main-menu></main-menu>
+      </div>
+      <!-- <div id="minimenu">
+        <mini-menu></mini-menu>
+      </div> -->
+      
+    </nav>
+    
+    <section class="page" id="page">
+      <!-- components for specific pages -->
+      <div id="recentMessages">
+       <!--  <recent-messages></recent-messages> -->
+      </div>
+      
+      <div id="todo">
+        <!-- <todo></todo> -->
+      </div>
+      <div class="wrappper">
+        <div class="linegraph chart-container">
+          <canvas class="workflow-chart" id="myChart"></canvas>
+        </div>
+        <div class="piechart chart-container">
+          <canvas id="sales-canvas"></canvas>
+        </div>
+        <div class="sales bargraph">
+          <canvas id="sales-by-day"></canvas>
+        </div>
+      </div>
+      
+      <!-- <div id="workflow" class="workflow-container">
+        <canvas class="workflow-chart" id="myChart"></canvas>
+        <canvas id="sales-canvas"></canvas>
+      </div>
+      <div id="sales" class="sales-container">
+        
+        <canvas id="sales-by-day"></canvas>
+      </div> -->
+      
+    </section>
+  </main>
+
+  
+  
+  <script src="js/vue.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+  <script src="js/themer.js"></script>
+  <script src="js/profile.js"></script>
+  <script src="js/dashmenu.js"></script>
+  <script src="js/mainmenu.js"></script>
+ <!--  <script src="js/minimenu.js"></script> -->
+  <script src="js/todo.js"></script>
+  <script src="js/recent-messages.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+  <script src="js/workflow.js"></script>
+  <script src="js/sales-graph.js"></script> 
+  <script src="js/sales-by-day.js"></script> 
+  
+
+</body>
+</html>

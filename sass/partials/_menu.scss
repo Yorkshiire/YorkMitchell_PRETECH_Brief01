@@ -1,0 +1,25 @@
+.navbar {
+  ul.tabs {
+    float:left;
+    margin:0;
+    padding:0;
+    
+    li {
+      display: inline-block;
+      padding:0;
+      margin: 0;
+      
+      a {
+        color:#fff;
+        background: #333;
+        text-decoration: none;
+       
+        &.active {
+          color:#000;
+          background: #fff;
+        }
+      }
+      
+    }
+  }
+}
